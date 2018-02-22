@@ -16,7 +16,7 @@ module.exports = function solveSudoku(matrix) {
         
         for (let i = 0; i < candidates.length; i++) {
           matrix[row][col] = candidates[i];
-          let res = solveSudoku(matrix);
+          let res = solveSudoku(matrix); //Рекурсия, уииии
           if (res !== false) return res;
         }
 
